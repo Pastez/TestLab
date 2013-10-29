@@ -20,6 +20,7 @@
 #import "PSGCDViewController.h"
 #import "PSMapViewController.h"
 #import "PSStateRestorationViewController.h"
+#import "PSAudioRecordingViewController.h"
 
 @interface PSTableTestCellData : NSObject
 
@@ -116,6 +117,7 @@ static NSString *cellIdentifier = @"Cell";
         [self.data addObject:[PSTableTestCellData cellDataWithName:@"Map Snapshoot" andDestinationViewControllerClass:[PSMapSnapshootViewController class]]];
         [self.data addObject:[PSTableTestCellData cellDataWithName:@"Map Location Picker" andDestinationViewControllerClass:[PSMapViewController class]]];
         [self.data addObject:[PSTableTestCellData cellDataWithName:@"Video" andDestinationViewControllerClass:[PSVideoViewController class]]];
+        [self.data addObject:[PSTableTestCellData cellDataWithName:@"Audio Recording" andDestinationViewControllerClass:[PSAudioRecordingViewController class]]];
         [self.data addObject:[PSTableTestCellData cellDataWithName:@"Grand Central Dispatch" andDestinationViewControllerClass:[PSGCDViewController class]]];
         [self.data addObject:[PSTableTestCellData cellDataWithName:@"StateRestoration" andDestinationViewControllerClass:[PSStateRestorationViewController class]]];
         

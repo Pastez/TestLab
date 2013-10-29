@@ -45,6 +45,9 @@
 		BC6F697E1806B667003D8455 /* PSDissmissDestroyTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6F697D1806B667003D8455 /* PSDissmissDestroyTransition.m */; };
 		BC6F69821806CFED003D8455 /* PSBlurViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6F69811806CFED003D8455 /* PSBlurViewController.m */; };
 		BC6F69851806D026003D8455 /* PSBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6F69841806D026003D8455 /* PSBlurView.m */; };
+		BC8DA322181FA75A00415F51 /* PSAudioRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8DA321181FA75A00415F51 /* PSAudioRecorder.m */; };
+		BC8DA325181FA77800415F51 /* PSAudioRecordingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8DA324181FA77800415F51 /* PSAudioRecordingViewController.m */; };
+		BC8DA328181FBCE500415F51 /* PSAudioTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8DA327181FBCE500415F51 /* PSAudioTableCell.m */; };
 		BCA665C0180E8D7800A4CCC7 /* PSGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA665BF180E8D7800A4CCC7 /* PSGCDViewController.m */; };
 		BCDE1AF21807DEBF0044EC2D /* PSMapSnapshootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCDE1AF11807DEBF0044EC2D /* PSMapSnapshootViewController.m */; };
 		BCDE1AF51807DF380044EC2D /* PSMapSnapshoot.m in Sources */ = {isa = PBXBuildFile; fileRef = BCDE1AF41807DF380044EC2D /* PSMapSnapshoot.m */; };
@@ -129,6 +132,12 @@
 		BC6F69811806CFED003D8455 /* PSBlurViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSBlurViewController.m; sourceTree = "<group>"; };
 		BC6F69831806D026003D8455 /* PSBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSBlurView.h; sourceTree = "<group>"; };
 		BC6F69841806D026003D8455 /* PSBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSBlurView.m; sourceTree = "<group>"; };
+		BC8DA320181FA75A00415F51 /* PSAudioRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSAudioRecorder.h; sourceTree = "<group>"; };
+		BC8DA321181FA75A00415F51 /* PSAudioRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSAudioRecorder.m; sourceTree = "<group>"; };
+		BC8DA323181FA77800415F51 /* PSAudioRecordingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSAudioRecordingViewController.h; sourceTree = "<group>"; };
+		BC8DA324181FA77800415F51 /* PSAudioRecordingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSAudioRecordingViewController.m; sourceTree = "<group>"; };
+		BC8DA326181FBCE500415F51 /* PSAudioTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSAudioTableCell.h; sourceTree = "<group>"; };
+		BC8DA327181FBCE500415F51 /* PSAudioTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSAudioTableCell.m; sourceTree = "<group>"; };
 		BCA665BE180E8D7800A4CCC7 /* PSGCDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSGCDViewController.h; sourceTree = "<group>"; };
 		BCA665BF180E8D7800A4CCC7 /* PSGCDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSGCDViewController.m; sourceTree = "<group>"; };
 		BCDE1AF01807DEBF0044EC2D /* PSMapSnapshootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSMapSnapshootViewController.h; sourceTree = "<group>"; };
@@ -231,6 +240,7 @@
 		BC6C496E17FBFF39005C6A00 /* testIOS7 */ = {
 			isa = PBXGroup;
 			children = (
+				BC8DA31F181FA72A00415F51 /* AudioRecording */,
 				BC29E5AE1815127300C3AE20 /* StateRestoration */,
 				BC29E5A7181006C700C3AE20 /* Maps */,
 				BC29E5A1180FC74800C3AE20 /* Video */,
@@ -370,6 +380,19 @@
 			name = BlurView;
 			sourceTree = "<group>";
 		};
+		BC8DA31F181FA72A00415F51 /* AudioRecording */ = {
+			isa = PBXGroup;
+			children = (
+				BC8DA320181FA75A00415F51 /* PSAudioRecorder.h */,
+				BC8DA321181FA75A00415F51 /* PSAudioRecorder.m */,
+				BC8DA323181FA77800415F51 /* PSAudioRecordingViewController.h */,
+				BC8DA324181FA77800415F51 /* PSAudioRecordingViewController.m */,
+				BC8DA326181FBCE500415F51 /* PSAudioTableCell.h */,
+				BC8DA327181FBCE500415F51 /* PSAudioTableCell.m */,
+			);
+			name = AudioRecording;
+			sourceTree = "<group>";
+		};
 		BCA665BD180E8D5100A4CCC7 /* GCD */ = {
 			isa = PBXGroup;
 			children = (
@@ -492,10 +515,12 @@
 				BC6F6964180443AC003D8455 /* UIImage+ImageEffects.m in Sources */,
 				BC6F694D180297ED003D8455 /* PSCollectionLayout.m in Sources */,
 				BC6F694617FD4C34003D8455 /* PSTableTestViewController.m in Sources */,
+				BC8DA325181FA77800415F51 /* PSAudioRecordingViewController.m in Sources */,
 				BC6F695A1803F6B5003D8455 /* PSTextKitAdvancedViewController.m in Sources */,
 				BC29E5AD1810085600C3AE20 /* PSMapViewMarker.m in Sources */,
 				BC6F696818052F55003D8455 /* PSCustomTransitionFromViewController.m in Sources */,
 				BC29E5AA181006DB00C3AE20 /* PSMapViewController.m in Sources */,
+				BC8DA328181FBCE500415F51 /* PSAudioTableCell.m in Sources */,
 				BCA665C0180E8D7800A4CCC7 /* PSGCDViewController.m in Sources */,
 				BC6F69561802F416003D8455 /* PSTextKitBasicViewController.m in Sources */,
 				BC29E5B11815128700C3AE20 /* PSStateRestorationViewController.m in Sources */,
@@ -504,6 +529,7 @@
 				BC6F696118043C64003D8455 /* PSEffectsViewController.m in Sources */,
 				BCDE1AF51807DF380044EC2D /* PSMapSnapshoot.m in Sources */,
 				BC6F69851806D026003D8455 /* PSBlurView.m in Sources */,
+				BC8DA322181FA75A00415F51 /* PSAudioRecorder.m in Sources */,
 				BC6F696E18053717003D8455 /* PSCustomPushTrasition.m in Sources */,
 				BC29E5A4180FC76B00C3AE20 /* PSVideoViewController.m in Sources */,
 				BC6C497517FBFF39005C6A00 /* main.m in Sources */,
